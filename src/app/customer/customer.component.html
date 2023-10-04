@@ -1,44 +1,39 @@
-<div class="card text-bg-warning mb-3" >
-    <div class="card-header">Clientes</div>
-    <div class="card-body">
-      <h5 class="card-title">Listado de clientes</h5>
-    <table class="table table-bordered table-striped">
-        <thead>
-        <tr>
-            <th>Id</th>
-            <th>DNI</th>
-            <th>Nombre</th>
-            <th>Apelllido</th>
-            <th>phone</th>
-            <th>Pagos</th>
-            <th>Dirección</th>
-            <th>Email</th>
-            <th>Alta</th>
+<div class="container">
+    <div class="card text-bg-warning mb-3">
+        <div class="card-header">Clientes</div>
+        <div class="card-body">
+            <h5 class="card-title">Listado de clientes</h5>
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>DNI</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Phone</th>
+                        <th>Pagos</th>
+                        <th>Dirección</th>
+                        <th>Email</th>
+                        <th>Alta</th>
+                        <th>Sucursal</th>
+                    </tr>
+                </thead>
 
-
-
-            
-
-   
-        </tr>
-    </thead>
-
-    <tbody>
-        <tr *ngFor="let customer of customers">
-            <th>{{customer.id}}</th>
-            <th>{{customer.dni}}</th>
-            <th>{{customer.name}}</th>
-            <th>{{customer.lastname}}</th>
-            <th>{{customer.phone}}</th>
-            <th>{{customer.payment}}</th>
-            <th>{{customer.address}}</th>
-            <th>{{customer.email}}</th>
-            <th>{{customer.alta}}</th>
-         
-
-        </tr>
-    </tbody>
-    </table>
-
+                <tbody>
+                    <tr *ngFor="let customer of customers">
+                        <td>{{customer.id}}</td>
+                        <td>{{customer.dni}}</td>
+                        <td>{{customer.name}}</td>
+                        <td>{{customer.lastname}}</td>
+                        <td>{{customer.phone}}</td>
+                        <td>{{customer.payment}}</td>
+                        <td>{{customer.address}}</td>
+                        <td>{{customer.email}}</td>
+                        <td>{{customer.registration}}</td>
+                        <td>{{customer.branch_name}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-  </div>
+</div>

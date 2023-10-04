@@ -13,6 +13,8 @@ import { BuyComponent } from './buy/buy.component';
 import { BranchComponent } from './branch/branch.component';
 import { CustomerService } from './customer/customer.service';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+
 
 const routes: Routes = [
   {path: 'provider', component: ProviderComponent},
@@ -39,6 +41,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     RouterModule.forRoot(routes)
   ],
   providers: [CustomerService],

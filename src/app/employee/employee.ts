@@ -1,15 +1,13 @@
-export class Cust {
+export class Employee {
 
     id: number = 0;
     dni: number = 0;
+    cuit: number = 0;
     name: string = "";
     lastname: string = "";
-    phone: string = "";
-    payment: string = "";
+    birth: string= "";
+    registration: string="";
     address: string = "";
-    email: string = "";
-    registration: string = "";
+    job: string = "";
     branch_name: string = "";
-  
-
 }

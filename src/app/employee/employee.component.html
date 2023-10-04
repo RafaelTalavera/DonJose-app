@@ -1,1 +1,40 @@
-<p>employee works!</p>
+<div class="container">
+    <div class="card text-bg-warning mb-3">
+        <div class="card-header">Empleados</div>
+        <div class="card-body">
+            <h5 class="card-title">Listado de Empleados</h5>
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>DNI</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Phone</th>
+                        <th>Pagos</th>
+                        <th>Dirección</th>
+                        <th>Email</th>
+                        <th>Alta</th>
+                        <th>Sucursal</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr *ngFor="let employee of employees">
+                        <td>{{employee.id}}</td>
+                        <td>{{employee.dni}}</td>
+                        <td>{{employee.cuit}}</td>
+                        <td>{{employee.name}}</td>
+                        <td>{{employee.lastname}}</td>
+                        <td>{{employee.birth}}</td>
+                        <td>{{employee.registration}}</td>
+                        <td>{{employee.address}}</td>
+                        <td>{{employee.job}}</td>
+                        <td>{{employee.branch_name}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
