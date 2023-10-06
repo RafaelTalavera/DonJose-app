@@ -13,10 +13,6 @@ export class Product {
     priceBuy: number = 0;
     branch_id: number = 0;
     branch_name: string = "";
-
-
-
-
  
 
 }

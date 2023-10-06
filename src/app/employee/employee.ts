@@ -10,4 +10,5 @@ export class Employee {
     address: string = "";
     job: string = "";
     branch_name: string = "";
+
 }
