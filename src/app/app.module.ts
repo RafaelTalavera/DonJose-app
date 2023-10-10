@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { CustomerComponent } from './customer/customer.component';
 import { ProductComponent } from './product/product.component';
-import { ProviderComponent } from './provider/provider.component';
+import { SupplierComponent } from './supplier/supplier.component'
 import { EmployeeComponent } from './employee/employee.component';
 import { SaleComponent } from './sale/sale.component';
 import { BuyComponent } from './buy/buy.component';
@@ -17,7 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 
 const routes: Routes = [
-  {path: 'provider', component: ProviderComponent},
+  {path: 'supplier', component: SupplierComponent},
   {path: 'customer', component: CustomerComponent},
   {path: 'employee', component: EmployeeComponent},
   {path: 'buy',      component: BuyComponent},
@@ -33,7 +33,7 @@ const routes: Routes = [
     NavComponent,
     CustomerComponent,
     ProductComponent,
-    ProviderComponent,
+    SupplierComponent,
     EmployeeComponent,
     SaleComponent,
     BuyComponent,

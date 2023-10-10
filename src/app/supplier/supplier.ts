@@ -1,4 +1,4 @@
-export class Provider {
+export class Supplier {
 
     id: number= 0;
     name: string = "";
@@ -8,7 +8,7 @@ export class Provider {
     address: string = "";
     email: string = "";
     dateAt: string = "";
-    branch_name: string = "";
+    branch_name: string = "2";
     registration: string = "";
 
 

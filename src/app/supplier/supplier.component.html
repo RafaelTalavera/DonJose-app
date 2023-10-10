@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="card text-bg-warning mb-3">
+        <div class="card-header">Proveedores</div>
+        <div class="card-body">
+            <h5 class="card-title">Listado de proveedores</h5>
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>DNI</th>
+                        <th>Phone</th>
+                        <th>Pagos</th>
+                        <th>Dirección</th>
+                        <th>E-mail</th>
+                        <th>Fecha de alta</th>
+                        <th>Sucursal</th>
+                        <th>Registracion</th>
+                       
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr *ngFor="let supplier of suppliers">
+                        <td>{{supplier.id}}</td>
+                        <td>{{supplier.name}}</td>
+                        <td>{{supplier.dni}}</td>
+                        <td>{{supplier.phone}}</td>
+                        <td>{{supplier.payment}}</td>
+                        <td>{{supplier.address}}</td>
+                        <td>{{supplier.email}}</td>
+                        <td>{{supplier.dateAt}}</td>
+                        <td>{{supplier.branch_name}}</td>                        
+                        <td>{{supplier.registration}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
